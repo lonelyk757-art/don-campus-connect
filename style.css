@@ -132,6 +132,64 @@ nav ul li a:hover {
     color: var(--white);
 }
 
+/* News Section */
+.news {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f4f7f6 0%, #e8f5f1 100%);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.news-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.news-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.news-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: var(--primary-color);
+}
+
 /* Smash or Pass Section */
 .smash-pass {
     padding: 4rem 0;
